@@ -5,8 +5,8 @@ const CardList = (props) => {
         return (
              <div>   
                     {
-                    props.robots.map((robot) => {
-                        return <Card robot={robot} />
+                    props.robots.map((robot,i) => {
+                        return <Card key={i} robot={robot} />
                     })
                     }
                 </div>

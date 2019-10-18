@@ -1,5 +1,5 @@
 import React from 'react';
-import {robots} from '../robots';
+// import {robots} from '../robots';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
@@ -15,6 +15,7 @@ class App extends React.Component {
         this.handleSearch = this.handleSearch.bind(this);
     }
     componentDidMount() {
+   
         fetch('https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())
         .then(users => this.setState({robots:users}));
